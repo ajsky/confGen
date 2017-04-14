@@ -1,0 +1,12 @@
+{
+  "PubKey": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDfvXzhRYQhP+RoRTClQUpw7KmY\nLnyY8VRjchn0YZRINZ4E9PnsjM6APIkTAXB25doKAfNs94UsX022VHLl80oXRXYC\n/8T2Yc3I0rH1+/oNgTS2wag0KWJ2+8H+EoGPE+kXL71Rq4H6DpxdhVAmovp074Zc\n5KdgYSwIamzz7yMPsQIDAQAB\n-----END PUBLIC KEY-----",
+  "Filesuffix": ".0x02",
+  "KeyFilename": "YR0x02.key",
+  "DkeyFilename": "YR0x02",
+  "Alert": "New game, old code",
+  "Readme": "Just smile :) and click https://github.com/YourRansom/YourRansom for your files back.",
+  "ReadmeFilename": "readme.txt",
+  "ReadmeUrl": "",
+  "ReadmeNetFilename": "",
+  "EncSuffix": ".vmdk|.txt|.zip|.rar|.7z|.doc|.docx|.ppt|.pptx|.xls|.xlsx|.jpg|.gif|.jpeg|.png|.mpg|.mov|.mp4|.avi|.mp3"
+}
