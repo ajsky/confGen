@@ -1,1 +1,4 @@
 .idea/
+*.sh
+*.enc
+confGen_*
