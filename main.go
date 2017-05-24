@@ -25,7 +25,8 @@ type Config struct {
 	ReadmeUrl         string
 	ReadmeNetFilename string
 
-	EncSuffix string
+	EncSuffix  string
+	SkipHidden bool
 }
 
 func (self *Config) init(data []byte) {
@@ -44,7 +45,7 @@ func (self *Config) nE(test string) bool {
 }
 
 func (self *Config) check() {
-	notEmptyList := []string{"PubKeyN", "PubKeyE", "Filesuffix", "KeyFilename", "DkeyFilename", "Readme", "ReadmeFilename", "EncSuffix"}
+	notEmptyList := []string{"PubKeyN", "PubKeyE", "Filesuffix", "KeyFilename", "DkeyFilename", "Readme", "ReadmeFilename", "EncSuffix", "SkipHidden"}
 	for _, k := range notEmptyList {
 		if !self.nE(k) {
 			fmt.Println("[Error] Config field", k, "can not be empty.")
