@@ -12,12 +12,12 @@ import (
 )
 
 type Config struct {
-	PubKey       string
+	PubKeyN string
+	PubKeyE int
+
 	Filesuffix   string
 	KeyFilename  string
 	DkeyFilename string
-
-	Alert string
 
 	Readme         string
 	ReadmeFilename string
@@ -44,17 +44,12 @@ func (self *Config) nE(test string) bool {
 }
 
 func (self *Config) check() {
-	notEmptyList := []string{"PubKey", "Filesuffix", "KeyFilename", "DkeyFilename", "Alert", "Readme", "ReadmeFilename", "EncSuffix"}
+	notEmptyList := []string{"PubKeyN", "PubKeyE", "Filesuffix", "KeyFilename", "DkeyFilename", "Readme", "ReadmeFilename", "EncSuffix"}
 	for _, k := range notEmptyList {
 		if !self.nE(k) {
 			fmt.Println("[Error] Config field", k, "can not be empty.")
 			os.Exit(213)
 		}
-	}
-
-	if !strings.HasPrefix(self.PubKey, "-----BEGIN PUBLIC KEY-----\n") {
-		fmt.Println("[Error] Wrong public key format.")
-		os.Exit(213)
 	}
 }
 
